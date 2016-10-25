@@ -1,0 +1,82 @@
+
+loader {
+    position: absolute;
+    top: 50%;
+    left: 50%
+}
+loader .threeDots {
+    display: inline-block;
+    width: 64px;
+    margin-left: -32px;
+    margin-top: -10px;
+    font-size: 0
+}
+loader .threeDots>div {
+    width: 20px;
+    height: 20px;
+    background-color: #1f87e5;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+    animation: bouncedelay 1.4s infinite ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+loader .threeDots .bounce1 {
+    -webkit-animation-delay: -.32s;
+    animation-delay: -.32s;
+    margin-right: 2px
+}
+loader .threeDots .bounce2 {
+    -webkit-animation-delay: -.16s;
+    animation-delay: -.16s;
+    margin-right: 2px
+}
+@-webkit-keyframes bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1)
+    }
+}
+@keyframes bouncedelay {
+    0%, 80%, 100% {
+        transform: scale(0);
+        -webkit-transform: scale(0)
+    }
+    40% {
+        transform: scale(1);
+        -webkit-transform: scale(1)
+    }
+}
+foo {
+    display: block;
+    position: absolute
+}
+bar {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .2), 0 6px 15px 0 rgba(0, 0, 0, .1), 0 0 1px rgba(0, 0, 0, .2)
+}
+bar {
+    border-radius: 3px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px
+}
+bar {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: translateZ(0)
+}
+bar>header {
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    position: relative;
+    height: 34px;
+    background-color: #f2f2f2;
+    box-shadow: 0 1px rgba(0, 0, 0, .1)
+}
